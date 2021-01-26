@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <mosaic-card title="Financial Assessment" nested>
+        <mosaic-card-body>
+            <mosaic-wizard step-count data-height="600px">
+                <mosaic-wizard-body>
+                    <mosaic-tabs active="tabBenefits">
+                        <mosaic-tab-pane id="tabBenefits" tab-pane-title="Benefits" icon="welfare">
+                            <mosaic-form prevent-default>
+                                <mosaic-select-input name="myInput1" block label="Financial Detail" help-text="Help Text" placeholder="Placeholder text in single select" valid-text="This is some valid text" invalid-text="This is some invalid text">
+                                    <option value="value 1">Value 1</option>
+                                    <option value="value 2">Value 2</option>
+                                    <option value="value 3">Value 3</option>
+                                    <option value="value 4">Value 4</option>
+                                    <option value="value 5">Value 5</option>
+                                    <option value="value 6">Value 6</option>
+                                </mosaic-select-input>
+                                <mosaic-text-input name="text1" block required label="Amount"
+                                    help-text="Help Text" placeholder=""
+                                    valid-text="This is some valid text" invalid-text="This is some invalid text">
+                                </mosaic-text-input>
+                                <mosaic-select-input name="myInput2" block label="Frequency" help-text="Help Text" placeholder="Placeholder text in single select" valid-text="This is some valid text" invalid-text="This is some invalid text">
+                                    <option value="value 1">Value 1</option>
+                                    <option value="value 2">Value 2</option>
+                                    <option value="value 3">Value 3</option>
+                                    <option value="value 4">Value 4</option>
+                                    <option value="value 5">Value 5</option>
+                                    <option value="value 6">Value 6</option>
+                                </mosaic-select-input>
+                                <mosaic-text-input name="text2" block required label="Reference"
+                                    help-text="Help Text" placeholder="Placeholder Text"
+                                    valid-text="This is some valid text" invalid-text="This is some invalid text">
+                                </mosaic-text-input>
+                                <!-- <mosaic-form-actions>
+                                    <mosaic-button color="secondary" reset>Reset</mosaic-button>
+                                    <mosaic-button submit>Submit</mosaic-button>
+                                </mosaic-form-actions> -->
+                            </mosaic-form>
+                        </mosaic-tab-pane>
+                        <mosaic-tab-pane id="tabIncome" tab-pane-title="Income" icon="money">
+                            <h3>Income</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </mosaic-tab-pane>
+                        <mosaic-tab-pane id="tabAssets" tab-pane-title="Assets" icon="share">
+                            <h3>Assets</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </mosaic-tab-pane>
+                        <mosaic-tab-pane id="tabProperty" tab-pane-title="Property" icon="home">
+                            <h3>Property</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </mosaic-tab-pane>
+                        <mosaic-tab-pane id="tabAllowableExpenses" tab-pane-title="Allowable Expenses"
+                            icon="expensive_2">
+                            <h3>Allowable Expenses</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </mosaic-tab-pane>
+                        <mosaic-tab-pane id="tabPremiums" tab-pane-title="Disability Premiums and Declaration"
+                            icon="document">
+                            <h3>Disability Premiums and Declaration</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </mosaic-tab-pane>
+                    </mosaic-tabs>
+                </mosaic-wizard-body>
+                <mosaic-wizard-footer>
+                    <mosaic-button next icon="double_right" tooltip="Next" color="primary" icon-right>Next
+                    </mosaic-button>
+                    <mosaic-button prev icon="double_left">Back</mosaic-button>
+                    <mosaic-button finish color="warning" tooltip="Save / Update" icon="save">Save / Update
+                    </mosaic-button>
+                </mosaic-wizard-footer>
+            </mosaic-wizard>
+        </mosaic-card-body>
+    </mosaic-card>
+
+    <script>
+        window.mosaicConfigure = {
+            componentPath: 'https://cdn.svc.oneadvanced.com/mosaic-components/latest',
+            themePath: 'https://cdn.svc.oneadvanced.com/mosaic-components/latest',
+            vendorPath: 'https://cdn.svc.oneadvanced.com/mosaic-components/latest/vendor',
+            useLayout: true,
+            useControls: true,
+            useData: true,
+            useForms: true,
+            useMessaging: true,
+            usePages: true,
+            usePageLoader: true
+        }
+    </script>
+    <script src="https://cdn.svc.oneadvanced.com/mosaic-components/latest/components-loader.js" async></script>
+</body>
+
+</html>

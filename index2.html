@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <mosaic-container content>
+        <mosaic-tabs vertical padded>
+            <mosaic-tab-pane id="tabBenefits" tab-pane-title="Benefits" icon="welfare" active>
+                <mosaic-card class="home-view-assessment">
+                    <mosaic-card-body>
+                        <h2>You Can View Your Assessments</h2>
+                        <p>
+                            You will be able to update your assessments while they are still in progress (prior to
+                            submitting).
+                            <mosaic-button icon="home">Button</mosaic-button>
+                        </p>
+                    </mosaic-card-body>
+                </mosaic-card>
+            </mosaic-tab-pane>
+            <mosaic-tab-pane id="tabIncome" tab-pane-title="Income" icon="money">
+                <h3>Feature 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </mosaic-tab-pane>
+            <mosaic-tab-pane id="tabAssets" tab-pane-title="Assets" icon="share">
+                <h3>Feature 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </mosaic-tab-pane>
+            <mosaic-tab-pane id="tabProperty" tab-pane-title="Property" icon="home">
+                <h3>Feature 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </mosaic-tab-pane>
+            <mosaic-tab-pane id="tabAllowableExpenses" tab-pane-title="Allowable Expenses" icon="expensive_2">
+                <h3>Feature 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </mosaic-tab-pane>
+        </mosaic-tabs>
+        <mosaic-button-group spaced>
+            <mosaic-button color="secondary" icon="previous" disabled>Previous</mosaic-button>
+            <mosaic-button color="secondary" icon="next">Next</mosaic-button>
+            <mosaic-button color="warning" icon="save">Save / Update</mosaic-button>
+        </mosaic-button-group>
+    </mosaic-container>
+
+    <script>
+        window.mosaicConfigure = {
+            componentPath: 'https://cdn.svc.oneadvanced.com/mosaic-components/latest',
+            themePath: 'https://cdn.svc.oneadvanced.com/mosaic-components/latest',
+            vendorPath: 'https://cdn.svc.oneadvanced.com/mosaic-components/latest/vendor'
+        }
+    </script>
+    <script src="https://cdn.svc.oneadvanced.com/mosaic-components/latest/components-loader.js" async></script>
+</body>
+
+</html>
